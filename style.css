@@ -1,0 +1,267 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 550;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+/* Responsive Images */
+main img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0
+}
+
+.form-item {
+  flex: 1;
+  margin: 12px 5px;
+}
+
+.about-item {
+  flex: 1;
+  margin: 12px;
+}
+
+.ideas-item {
+  flex: 1;
+  margin: 12px;
+}
+
+.host-item {
+  flex: 1;
+  margin: 12px;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 50px;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  list-style-type: none;
+  font-size: x-large;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select, form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+}
+
+.date::placeholder {
+  color: black;
+}
+
+.space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+  @media all and (min-width: 480px) {
+    header {
+      /* Changes the default setting from `block` to `flex`. */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav {
+      align-items: center;
+      justify-content: center;
+    }
+    header nav ul li a:hover {
+      color: #bdbdbd;
+    }
+    .logo {
+      font-size: 30px;
+      justify-content: center;
+    }
+  }
+
+
+@media all and (min-width: 1000px) {
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 8px;
+  }
+
+  .space-between {
+    /* Group style for the label and input */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* Style for the label and input as one item */
+    align-self: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+  @media all and (min-width: 480px) {
+
+.desktop-about-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+.about-item {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Sets the paragraph as twice the size of each img item */
+.double-item {
+  flex: 2;
+}
+
+.desktop-ideas-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+
+.ideas-item {
+  flex: 0 50%;
+  margin: 10px;
+}
+
+.ideas h2 {
+  margin-bottom: 0px;
+}
+
+
+.desktop-host-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.host-item {
+  flex: 1;
+  margin: 10px;
+}
+
+}
